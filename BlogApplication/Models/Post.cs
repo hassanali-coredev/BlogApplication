@@ -17,7 +17,7 @@ namespace BlogApplication.Models
         public string Author { get; set; }
         public string FeatureImagePath { get; set; }
         [DataType(DataType.Date)]
-        public DateTime publishedDate { get; set; } = DateTime.Now;
+        public DateTime PublishedDate { get; set; } = DateTime.Now;
         [ForeignKey("Category")] 
         public int CategoryId { get; set; }
         public Category Category { get; set; }
